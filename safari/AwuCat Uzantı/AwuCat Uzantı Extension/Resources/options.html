@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AwuCat uzantısı — Ayarlar</title>
+    <link rel="stylesheet" href="ui.css" />
+  </head>
+  <body class="options">
+    <header class="brand">
+      <img src="icons/icon-48.png" alt="" width="28" height="28" />
+      <span>AwuCat uzantısı</span>
+    </header>
+    <h1>Ayarlar</h1>
+    <p class="muted">Uzantı hiçbir veri toplamaz; bu ayarlar yalnızca tarayıcı profilinizde saklanır.</p>
+
+    <h2>Uygulama adresi</h2>
+    <div class="card">
+      <div id="presets"></div>
+      <label class="radio">
+        <input type="radio" name="base" value="custom" id="base-custom" />
+        <span>Özel adres</span>
+      </label>
+      <div class="field">
+        <input type="url" id="customUrl" placeholder="https://ornek.com" autocomplete="off" spellcheck="false" />
+        <span class="hint">Kendi AwuCat kurulumunuz. Kaydederken bu site için erişim izni istenir (dosyaların sekmeye aktarılabilmesi için gerekli).</span>
+      </div>
+      <div class="row">
+        <button id="save" class="btn primary" type="button">Kaydet</button>
+        <span id="saveStatus" class="status"></span>
+      </div>
+    </div>
+
+    <h2>İndirme düzeltmesi</h2>
+    <div class="card">
+      <label class="switch-row" for="fixZip" style="border-top: 0; margin-top: 0; padding-top: 0">
+        <span>
+          <code>.udf.zip</code> → <code>.udf</code>
+          <small id="fixZip-sub">WhatsApp Web ve e-posta istemcilerinin .zip yaptığı UDF indirmelerini kaydedilirken düzeltir (Chrome/Edge).</small>
+        </span>
+        <input type="checkbox" role="switch" id="fixZip" />
+      </label>
+      <label class="switch-row" for="heuristic">
+        <span>
+          Ada göre tahmin
+          <small>WhatsApp Web / web postadan gelen, 25 MB altı ve adı "dilekçe", "karar", "tensip" gibi kelimeler içeren <code>.zip</code> dosyalarını da <code>.udf</code> yapar. Dosya içeriği okunmaz; yalnızca ad ve tür bilgisine bakılır.</small>
+        </span>
+        <input type="checkbox" role="switch" id="heuristic" />
+      </label>
+      <label class="switch-row" for="notify">
+        <span>
+          Bildirim göster
+          <small id="notify-sub">Bir dosya düzeltildiğinde kısa bir sistem bildirimi gösterir.</small>
+        </span>
+        <input type="checkbox" role="switch" id="notify" />
+      </label>
+    </div>
+
+    <h2>Bağlantıdan açma</h2>
+    <div class="card">
+      <div class="field">
+        <label for="openTarget">Bağlantıdaki dosyalar şurada açılsın</label>
+        <select id="openTarget">
+          <option value="viewer">Görüntüleyici</option>
+          <option value="editor">Editör</option>
+        </select>
+        <span class="hint">Word/RTF/ODT/metin dosyaları her zaman editörde açılır.</span>
+      </div>
+      <p class="hint">Aynı sitedeki bağlantılar için ek izin gerekmez. Başka bir siteye giden bağlantılarda tarayıcı bir kez o site için erişim izni ister; izin verilen siteler aşağıda listelenir ve istediğiniz zaman kaldırılabilir.</p>
+      <ul id="origins" class="origins"></ul>
+    </div>
+
+    <h2>Hakkında</h2>
+    <div class="card">
+      <p>Dosyalar yalnızca tarayıcı içinde, sekmeden sekmeye aktarılır; hiçbir sunucuya gönderilmez. Kullanım verisi, çerez veya kimlik toplanmaz.</p>
+      <p><a id="privacy" href="#" target="_blank" rel="noopener">Gizlilik politikası</a> · <a id="app" href="#" target="_blank" rel="noopener">AwuCat'i aç</a> · <span class="muted" id="version"></span></p>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

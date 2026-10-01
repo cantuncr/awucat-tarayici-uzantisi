@@ -1,0 +1,29 @@
+{
+  "name": "awucat-browser-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AwuCat tarayıcı uzantısı: WhatsApp'ın .zip yaptığı UDF indirmelerini düzeltir, bağlantıdaki belgeleri AwuCat'te açar.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "icons": "node scripts/make-icons.mjs",
+    "zip": "node scripts/build.mjs && node scripts/zip.mjs",
+    "verify": "node scripts/build.mjs && node scripts/verify.mjs",
+    "verify:webkit": "node scripts/build.mjs && node scripts/verify-webkit.mjs",
+    "check": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.4",
+    "@types/node": "^22.20.4",
+    "esbuild": "^0.28.2",
+    "fflate": "^0.8.3",
+    "playwright-core": "1.63.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <title>AwuCat</title>
+    <link rel="stylesheet" href="ui.css" />
+  </head>
+  <body class="popup">
+    <header class="brand">
+      <img src="icons/icon-32.png" alt="" width="20" height="20" />
+      <span>AwuCat</span>
+      <span class="spacer"></span>
+      <button id="settings" class="icon-btn" type="button" title="Ayarlar" aria-label="Ayarlar">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="3" />
+          <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
+        </svg>
+      </button>
+    </header>
+
+    <section id="pending" class="banner" hidden>
+      <p><strong id="pending-host"></strong> adresinden dosya almak için site erişimi izni gerekiyor.</p>
+      <div class="row">
+        <button id="pending-grant" class="btn primary" type="button">İzin ver ve aç</button>
+        <button id="pending-dismiss" class="btn ghost" type="button">Vazgeç</button>
+      </div>
+    </section>
+
+    <section id="access" class="banner" hidden>
+      <p>Safari site erişimi vermeden uzantı <strong id="access-hosts"></strong> üzerinde çalışamaz (dosya aktarımı, WhatsApp .zip düzeltmesi).</p>
+      <div class="row">
+        <button id="access-grant" class="btn primary" type="button">Erişim izni ver</button>
+      </div>
+    </section>
+
+    <nav class="grid" aria-label="AwuCat sayfaları">
+      <button class="btn primary" type="button" data-page="editor">Editörü aç</button>
+      <button class="btn" type="button" data-page="viewer">Görüntüleyici</button>
+      <button class="btn" type="button" data-page="converter">Dönüştürücü</button>
+    </nav>
+
+    <label class="drop" id="drop" for="file">
+      <input id="file" type="file" hidden accept=".udf,.zip,.pdf,.docx,.docm,.doc,.odt,.ott,.rtf,.txt,.html,.htm,.tif,.tiff,.png,.jpg,.jpeg,.webp" />
+      <span class="drop-title">Dosya seç veya buraya bırak</span>
+      <span class="drop-sub">.udf · .zip · .pdf · .docx · .tif — dosya cihazınızdan çıkmaz</span>
+    </label>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <label class="switch-row" for="fixZip">
+      <span>
+        WhatsApp .zip → .udf düzeltmesi
+        <small id="fixZip-sub">İndirilen <code>.udf.zip</code> dosyalarını <code>.udf</code> yapar</small>
+      </span>
+      <input type="checkbox" role="switch" id="fixZip" />
+    </label>
+
+    <footer>
+      <a id="privacy" href="#" target="_blank" rel="noopener">Gizlilik</a>
+      <span id="base" class="muted" title="Uygulama adresi"></span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

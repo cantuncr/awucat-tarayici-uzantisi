@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC3055D4306D88C50096E425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3055D3306D88C50096E425 /* AppDelegate.swift */; };
+		EC3055D8306D88C50096E425 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EC3055D6306D88C50096E425 /* Main.html */; };
+		EC3055DA306D88C50096E425 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3055D9306D88C50096E425 /* Icon.png */; };
+		EC3055DC306D88C50096E425 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EC3055DB306D88C50096E425 /* Style.css */; };
+		EC3055DE306D88C50096E425 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EC3055DD306D88C50096E425 /* Script.js */; };
+		EC3055E0306D88C50096E425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3055DF306D88C50096E425 /* ViewController.swift */; };
+		EC3055E3306D88C50096E425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3055E1306D88C50096E425 /* Main.storyboard */; };
+		EC3055E5306D88C60096E425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3055E4306D88C60096E425 /* Assets.xcassets */; };
+		EC3055EC306D88C60096E425 /* AwuCat Uzantı Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EC3055EB306D88C60096E425 /* AwuCat Uzantı Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC3055F1306D88C60096E425 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3055F0306D88C60096E425 /* SafariWebExtensionHandler.swift */; };
+		EC305608306D88C60096E425 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = EC3055FD306D88C60096E425 /* popup.js */; };
+		EC305609306D88C60096E425 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EC3055FE306D88C60096E425 /* background.js */; };
+		EC30560A306D88C60096E425 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = EC3055FF306D88C60096E425 /* popup.html */; };
+		EC30560B306D88C60096E425 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = EC305600306D88C60096E425 /* options.js */; };
+		EC30560C306D88C60096E425 /* whatsapp-main.js in Resources */ = {isa = PBXBuildFile; fileRef = EC305601306D88C60096E425 /* whatsapp-main.js */; };
+		EC30560D306D88C60096E425 /* whatsapp.js in Resources */ = {isa = PBXBuildFile; fileRef = EC305602306D88C60096E425 /* whatsapp.js */; };
+		EC30560E306D88C60096E425 /* ui.css in Resources */ = {isa = PBXBuildFile; fileRef = EC305603306D88C60096E425 /* ui.css */; };
+		EC30560F306D88C60096E425 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = EC305604306D88C60096E425 /* icons */; };
+		EC305610306D88C60096E425 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EC305605306D88C60096E425 /* manifest.json */; };
+		EC305611306D88C60096E425 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = EC305606306D88C60096E425 /* options.html */; };
+		EC305612306D88C60096E425 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EC305607306D88C60096E425 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC3055ED306D88C60096E425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3055C8306D88C50096E425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC3055EA306D88C60096E425;
+			remoteInfo = "AwuCat Uzantı Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC3055F8306D88C60096E425 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				EC3055EC306D88C60096E425 /* AwuCat Uzantı Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC3055D0306D88C50096E425 /* AwuCat Uzantı.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AwuCat Uzantı.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3055D3306D88C50096E425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3055D7306D88C50096E425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		EC3055D9306D88C50096E425 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EC3055DB306D88C50096E425 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		EC3055DD306D88C50096E425 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		EC3055DF306D88C50096E425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC3055E2306D88C50096E425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC3055E4306D88C60096E425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC3055E6306D88C60096E425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3055EB306D88C60096E425 /* AwuCat Uzantı Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AwuCat Uzantı Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3055F0306D88C60096E425 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		EC3055F2306D88C60096E425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3055FD306D88C60096E425 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		EC3055FE306D88C60096E425 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		EC3055FF306D88C60096E425 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		EC305600306D88C60096E425 /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = Resources/options.js; sourceTree = "<group>"; };
+		EC305601306D88C60096E425 /* whatsapp-main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "whatsapp-main.js"; path = "Resources/whatsapp-main.js"; sourceTree = "<group>"; };
+		EC305602306D88C60096E425 /* whatsapp.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = whatsapp.js; path = Resources/whatsapp.js; sourceTree = "<group>"; };
+		EC305603306D88C60096E425 /* ui.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = ui.css; path = Resources/ui.css; sourceTree = "<group>"; };
+		EC305604306D88C60096E425 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		EC305605306D88C60096E425 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		EC305606306D88C60096E425 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = Resources/options.html; sourceTree = "<group>"; };
+		EC305607306D88C60096E425 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3055CD306D88C50096E425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		EC3055E8306D88C60096E425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC3055C7306D88C50096E425 = {
+			isa = PBXGroup;
+			children = (
+				EC3055D2306D88C50096E425 /* AwuCat Uzantı */,
+				EC3055EF306D88C60096E425 /* AwuCat Uzantı Extension */,
+				EC3055D1306D88C50096E425 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC3055D1306D88C50096E425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3055D0306D88C50096E425 /* AwuCat Uzantı.app */,
+				EC3055EB306D88C60096E425 /* AwuCat Uzantı Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3055D2306D88C50096E425 /* AwuCat Uzantı */ = {
+			isa = PBXGroup;
+			children = (
+				EC3055D3306D88C50096E425 /* AppDelegate.swift */,
+				EC3055DF306D88C50096E425 /* ViewController.swift */,
+				EC3055E1306D88C50096E425 /* Main.storyboard */,
+				EC3055E4306D88C60096E425 /* Assets.xcassets */,
+				EC3055E6306D88C60096E425 /* Info.plist */,
+				EC3055D5306D88C50096E425 /* Resources */,
+			);
+			path = "AwuCat Uzantı";
+			sourceTree = "<group>";
+		};
+		EC3055D5306D88C50096E425 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC3055D6306D88C50096E425 /* Main.html */,
+				EC3055D9306D88C50096E425 /* Icon.png */,
+				EC3055DB306D88C50096E425 /* Style.css */,
+				EC3055DD306D88C50096E425 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC3055EF306D88C60096E425 /* AwuCat Uzantı Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC3055FC306D88C60096E425 /* Resources */,
+				EC3055F0306D88C60096E425 /* SafariWebExtensionHandler.swift */,
+				EC3055F2306D88C60096E425 /* Info.plist */,
+			);
+			path = "AwuCat Uzantı Extension";
+			sourceTree = "<group>";
+		};
+		EC3055FC306D88C60096E425 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC3055FD306D88C60096E425 /* popup.js */,
+				EC3055FE306D88C60096E425 /* background.js */,
+				EC3055FF306D88C60096E425 /* popup.html */,
+				EC305600306D88C60096E425 /* options.js */,
+				EC305601306D88C60096E425 /* whatsapp-main.js */,
+				EC305602306D88C60096E425 /* whatsapp.js */,
+				EC305603306D88C60096E425 /* ui.css */,
+				EC305604306D88C60096E425 /* icons */,
+				EC305605306D88C60096E425 /* manifest.json */,
+				EC305606306D88C60096E425 /* options.html */,
+				EC305607306D88C60096E425 /* content.js */,
+			);
+			name = Resources;
+			path = "AwuCat Uzantı Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3055CF306D88C50096E425 /* AwuCat Uzantı */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3055F9306D88C60096E425 /* Build configuration list for PBXNativeTarget "AwuCat Uzantı" */;
+			buildPhases = (
+				EC3055CC306D88C50096E425 /* Sources */,
+				EC3055CD306D88C50096E425 /* Frameworks */,
+				EC3055CE306D88C50096E425 /* Resources */,
+				EC3055F8306D88C60096E425 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC3055EE306D88C60096E425 /* PBXTargetDependency */,
+			);
+			name = "AwuCat Uzantı";
+			productName = "AwuCat Uzantı";
+			productReference = EC3055D0306D88C50096E425 /* AwuCat Uzantı.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC3055EA306D88C60096E425 /* AwuCat Uzantı Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3055F5306D88C60096E425 /* Build configuration list for PBXNativeTarget "AwuCat Uzantı Extension" */;
+			buildPhases = (
+				EC3055E7306D88C60096E425 /* Sources */,
+				EC3055E8306D88C60096E425 /* Frameworks */,
+				EC3055E9306D88C60096E425 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "AwuCat Uzantı Extension";
+			productName = "AwuCat Uzantı Extension";
+			productReference = EC3055EB306D88C60096E425 /* AwuCat Uzantı Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC3055C8306D88C50096E425 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					EC3055CF306D88C50096E425 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					EC3055EA306D88C60096E425 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = EC3055CB306D88C50096E425 /* Build configuration list for PBXProject "AwuCat Uzantı" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC3055C7306D88C50096E425;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EC3055D1306D88C50096E425 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3055CF306D88C50096E425 /* AwuCat Uzantı */,
+				EC3055EA306D88C60096E425 /* AwuCat Uzantı Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3055CE306D88C50096E425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				EC3055DA306D88C50096E425 /* Icon.png in Resources */,
+				EC3055E3306D88C50096E425 /* Main.storyboard in Resources */,
+				EC3055DE306D88C50096E425 /* Script.js in Resources */,
+				EC3055D8306D88C50096E425 /* Main.html in Resources */,
+				EC3055E5306D88C60096E425 /* Assets.xcassets in Resources */,
+				EC3055DC306D88C50096E425 /* Style.css in Resources */,
+			);
+		};
+		EC3055E9306D88C60096E425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				EC30560D306D88C60096E425 /* whatsapp.js in Resources */,
+				EC305612306D88C60096E425 /* content.js in Resources */,
+				EC30560F306D88C60096E425 /* icons in Resources */,
+				EC305609306D88C60096E425 /* background.js in Resources */,
+				EC30560B306D88C60096E425 /* options.js in Resources */,
+				EC305610306D88C60096E425 /* manifest.json in Resources */,
+				EC30560C306D88C60096E425 /* whatsapp-main.js in Resources */,
+				EC30560A306D88C60096E425 /* popup.html in Resources */,
+				EC305611306D88C60096E425 /* options.html in Resources */,
+				EC30560E306D88C60096E425 /* ui.css in Resources */,
+				EC305608306D88C60096E425 /* popup.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC3055CC306D88C50096E425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				EC3055E0306D88C50096E425 /* ViewController.swift in Sources */,
+				EC3055D4306D88C50096E425 /* AppDelegate.swift in Sources */,
+			);
+		};
+		EC3055E7306D88C60096E425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				EC3055F1306D88C60096E425 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC3055EE306D88C60096E425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC3055EA306D88C60096E425 /* AwuCat Uzantı Extension */;
+			targetProxy = EC3055ED306D88C60096E425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC3055D6306D88C50096E425 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3055D7306D88C50096E425 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		EC3055E1306D88C50096E425 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3055E2306D88C50096E425 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3055F3306D88C60096E425 /* Debug configuration for PBXProject "AwuCat Uzantı" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC3055F4306D88C60096E425 /* Release configuration for PBXProject "AwuCat Uzantı" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EC3055F6306D88C60096E425 /* Debug configuration for PBXNativeTarget "AwuCat Uzantı Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AwuCat Uzantı Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AwuCat";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 CTSS LLC";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctss.awucat.safari.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC3055F7306D88C60096E425 /* Release configuration for PBXNativeTarget "AwuCat Uzantı Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AwuCat Uzantı Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AwuCat";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 CTSS LLC";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctss.awucat.safari.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EC3055FA306D88C60096E425 /* Debug configuration for PBXNativeTarget "AwuCat Uzantı" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AwuCat Uzantı/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AwuCat Uzantı";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 CTSS LLC";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctss.awucat.safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC3055FB306D88C60096E425 /* Release configuration for PBXNativeTarget "AwuCat Uzantı" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AwuCat Uzantı/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AwuCat Uzantı";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 CTSS LLC";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctss.awucat.safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC3055CB306D88C50096E425 /* Build configuration list for PBXProject "AwuCat Uzantı" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3055F3306D88C60096E425 /* Debug configuration for PBXProject "AwuCat Uzantı" */,
+				EC3055F4306D88C60096E425 /* Release configuration for PBXProject "AwuCat Uzantı" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		EC3055F5306D88C60096E425 /* Build configuration list for PBXNativeTarget "AwuCat Uzantı Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3055F6306D88C60096E425 /* Debug configuration for PBXNativeTarget "AwuCat Uzantı Extension" */,
+				EC3055F7306D88C60096E425 /* Release configuration for PBXNativeTarget "AwuCat Uzantı Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		EC3055F9306D88C60096E425 /* Build configuration list for PBXNativeTarget "AwuCat Uzantı" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3055FA306D88C60096E425 /* Debug configuration for PBXNativeTarget "AwuCat Uzantı" */,
+				EC3055FB306D88C60096E425 /* Release configuration for PBXNativeTarget "AwuCat Uzantı" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC3055C8306D88C50096E425 /* Project object */;
+	validationLevel = 1;
+}
