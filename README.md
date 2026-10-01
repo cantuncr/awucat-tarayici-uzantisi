@@ -1,5 +1,7 @@
 # AwuCat tarayıcı uzantısı
 
+Örnek dosya (test için): [ornek-dilekce.udf](https://raw.githubusercontent.com/cantuncr/awucat-tarayici-uzantisi/main/ornek/ornek-dilekce.udf)
+
 Chrome, Edge, Brave, Opera ve Yandex Browser için Manifest V3 uzantısı (Firefox ve Safari için ayrı
 paketler aynı kaynaktan üretilir, bkz. aşağı). Üç iş yapar, hiçbir veri toplamaz:
 
